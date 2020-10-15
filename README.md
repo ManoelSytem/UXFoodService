@@ -1,2 +1,2 @@
-# UXFoodService
-Projeto UX para cliente FoodService
+# UxFoodService
+Projeto frond End  para o cliente
