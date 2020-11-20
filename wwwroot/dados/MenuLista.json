@@ -1,0 +1,14 @@
+[
+  {
+    "titulo" : "Bebidas",
+    "descricao" : "Bebidas diversas pra voçê curtir com seus amigos e casal e familia.",
+    "codListaMenu": "1"
+  },
+
+  {
+    "titulo" : "Comidas Regionais",
+    "descricao" : "Comidas da melhor da região prove essa delicia.",
+    "codListaMenu" : "2"
+  }
+  
+]
