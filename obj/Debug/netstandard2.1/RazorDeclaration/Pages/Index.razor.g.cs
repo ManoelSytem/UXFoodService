@@ -90,6 +90,20 @@ using System.Text.Json;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "C:\Users\Tees\source\repos\UXFoodService\_Imports.razor"
+using Service.Interface;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\Tees\source\repos\UXFoodService\_Imports.razor"
+using Model;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

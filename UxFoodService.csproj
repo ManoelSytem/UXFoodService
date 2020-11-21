@@ -10,6 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Refit" Version="5.2.1" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="5.2.1" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.0" />
   </ItemGroup>
 
@@ -19,10 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <watch Remove="Pages\Produtoview.razor" />
     <watch Remove="Shared\ListaManu.razor" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Pages\Produtoview.razor" />
     <None Include="Shared\ListaManu.razor" />
   </ItemGroup>
 

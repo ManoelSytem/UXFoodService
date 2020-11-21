@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using UxFoodService.Service.Interface;
+using UxFoodService.Service;
+using Refit;
+using UxFoodService.Util;
 
 namespace UxFoodService
 {
@@ -16,8 +20,9 @@ namespace UxFoodService
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
-
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddSingleton<HttpClient>();
+            builder.Services.AddSingleton<IJsonAutoMapper, JsonAutoMapperGeneric>();
+            builder.Services.AddSingleton<ICardapioService, CardapioService>();
             await builder.Build().RunAsync();
         }
     }
