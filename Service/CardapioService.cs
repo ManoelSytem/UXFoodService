@@ -21,18 +21,29 @@ namespace UxFoodService.Service
 
         public async Task<List<MenuModel>> GetListMenu()
         {
+            List<MenuModel> listaMenuNaoRepedido = new List<MenuModel>();
             var ICardapioRepository = RestService.For<ICardapiorRepository>(Servico.UrlBaseFoodService());
-            var responseListMenu = await ICardapioRepository.GetListMenuCardapioPorId(18);
-            var listaMenu = _iJsonAutoMapper.ConvertAutoMapperListJson<MenuModel>(responseListMenu);
-            return listaMenu;
+            var responseListMenu = await ICardapioRepository.GetCardapioPrincipalMenu();
+            foreach(MenuModel item in responseListMenu)
+            {
+                if (!listaMenuNaoRepedido.Any(x => x.titulo == item.titulo))
+                    listaMenuNaoRepedido.Add(item);
+            }
+            return listaMenuNaoRepedido;
         }
-
-        public async Task<List<ProdutoModel>> GetListProdutoPorMenu(List<int> listadeProduto)
+        
+        public async Task<List<ProdutoModel>> GetListProdutoPorMenu(string codSeqMenu)
         {
+            List<int> listCodProduto = new List<int>();
             var ICardapioRepository = RestService.For<ICardapiorRepository>(Servico.UrlBaseFoodService());
-            var responseListProduto = await ICardapioRepository.GetListProdutoPorListProduto(listadeProduto);
-            var listaMenu = _iJsonAutoMapper.ConvertAutoMapperListJson<ProdutoModel>(responseListProduto);
-            return listaMenu;
+            var responseMenu = await ICardapioRepository.GetMenuPorMenuSeq(codSeqMenu);
+            foreach(MenuModel item in responseMenu)
+            {
+                listCodProduto.Add(item.codProduto);
+            }
+            var responseListProduto = await ICardapioRepository.GetListProdutoPorListProduto(listCodProduto);
+            var listaProduto = _iJsonAutoMapper.ConvertAutoMapperListJson<ProdutoModel>(responseListProduto);
+            return listaProduto;
         }
 
     }

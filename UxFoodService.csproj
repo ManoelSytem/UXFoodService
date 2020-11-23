@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Blazored.LocalStorage" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
@@ -22,13 +23,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <watch Remove="Pages\Produtoview.razor" />
-    <watch Remove="Shared\ListaManu.razor" />
+    <Content Remove="Pages\Mesa.razor" />
+    <Content Remove="Shared\Spinner.razor" />
   </ItemGroup>
 
   <ItemGroup>
+    <watch Remove="Pages\Mesa.razor" />
+    <watch Remove="Pages\Produtoview.razor" />
+    <watch Remove="Shared\ListaManu.razor" />
+    <watch Remove="Shared\Spinner.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Shared\Mesa.razor" />
     <None Include="Pages\Produtoview.razor" />
     <None Include="Shared\ListaManu.razor" />
+    <None Include="Shared\Spinner.razor" />
   </ItemGroup>
 
 </Project>

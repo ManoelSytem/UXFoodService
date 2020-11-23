@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\grJJOcOKHv8Li9_EZR069ujlXb0gCP_vxtlEfl5lGEk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\B2rUdF1HKTK0NZaz-rjdH8G9mJuCVNz7gfqRTrZW1gI=.hash",
       "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\UxFoodService.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/UxFoodService.dll.br"
     },
@@ -236,6 +236,21 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Refit.dll.br"
     },
     {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\7_FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=.hash",
+      "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.LocalStorage.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CNukDMTMsZ77nI593UgjfZkJqNhgDLvnpUjL2QzFL2M=.hash",
+      "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash",
+      "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
+    },
+    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FJ_rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=.hash",
       "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.WebAssembly.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.br"
@@ -251,22 +266,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CNukDMTMsZ77nI593UgjfZkJqNhgDLvnpUjL2QzFL2M=.hash",
-      "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash",
-      "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash",
       "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.WebAssembly.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\MfcqgTj0Kf6DCV_LtJx_9aXiZeh_hhlYqHVu3UcrYvk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\2yWcwTGf1Od3D-xt7HCO_N12hgQIECjAklQgFH7lKkw=.hash",
       "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\UxFoodService.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/UxFoodService.pdb.br"
     },
@@ -291,12 +296,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\9GSwnzvB2oLUDj2kFPK1b3jBQ9Pc_zgv58JsazIbdEI=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Ox_O-ivGJjPnng6V4YdfcU2fP0icIzG0T9DZsBePn0g=.hash",
       "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\VlYKQFX6pzZeVdfHHSRA0QXuoxA403mPyW-gKz47Kqg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iDGIc6uzsLAA8HuMTH6ng7_5C4NaLh0rrSj7Yi5F_hs=.hash",
       "Source": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.br"
     }

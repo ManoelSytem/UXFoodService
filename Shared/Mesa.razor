@@ -1,0 +1,52 @@
+﻿@inject HttpClient http
+@inject IMesaService MesaService
+@inject Blazored.LocalStorage.ILocalStorageService localStore
+@inject IJSRuntime js
+@layout MainLayout
+@if (listMesa == null)
+{
+    <label>Carregando...</label>
+}
+else
+{
+    <div class="modal fade" id="MesaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Escolher mesa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Para qual Mesa deseja pedir o produto ? Selecione a mesa:
+                    <input id="codProduto" name="user" type="hidden">
+                    <label id="texto"></label>
+                    <select class="form-control" id="Mesa">
+                        @foreach (var item in listMesa)
+                        {
+                            <option value="@item.codigo">Mesa @item.numero</option>
+                        }
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" id="Pedir" onclick="AdicionarConsumo()" class="btn btn-primary">Pedir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+@code {
+
+    public List<MesaModel> listMesa { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        listMesa = await MesaService.GetListMesa();
+    }
+
+
+}

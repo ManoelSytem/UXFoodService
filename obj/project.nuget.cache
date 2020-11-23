@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aSuMpjL1vjgowjDbXkcxTrvBBdqAHPDfB65Z1Rdoa5L3N1bjFzK0xnzy+Vhv/eJvXb8bLfqUllByIZQBeacBIw==",
+  "dgSpecHash": "5V4xbfCB0xGGTVIRUeCes+Nv6YBLQkhEr+rJJEdpbq5mXJXg6Ag5GJWo/RWE52CDppph5xUJAEP2ZueXffaqbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tees\\source\\repos\\UXFoodService\\UxFoodService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Tees\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
     "C:\\Users\\Tees\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Tees\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Tees\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",

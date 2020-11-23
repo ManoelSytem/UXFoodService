@@ -11,6 +11,7 @@ using UxFoodService.Service.Interface;
 using UxFoodService.Service;
 using Refit;
 using UxFoodService.Util;
+using Blazored.LocalStorage;
 
 namespace UxFoodService
 {
@@ -23,6 +24,9 @@ namespace UxFoodService
             builder.Services.AddSingleton<HttpClient>();
             builder.Services.AddSingleton<IJsonAutoMapper, JsonAutoMapperGeneric>();
             builder.Services.AddSingleton<ICardapioService, CardapioService>();
+            builder.Services.AddSingleton<IMesaService, MesaService>();
+            builder.Services.AddSingleton<IClienteService, ClienteService>();
+            builder.Services.AddBlazoredLocalStorage();
             await builder.Build().RunAsync();
         }
     }

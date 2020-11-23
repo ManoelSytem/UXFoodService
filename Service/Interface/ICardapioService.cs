@@ -9,6 +9,7 @@ namespace UxFoodService.Service.Interface
     public interface ICardapioService
     {
         public Task<List<MenuModel>> GetListMenu();
-        public Task<List<ProdutoModel>> GetListProdutoPorMenu(List<int> listadeProduto);
+        public Task<List<ProdutoModel>> GetListProdutoPorMenu(string codSeqMenu);
+        
     }
 }

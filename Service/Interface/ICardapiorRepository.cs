@@ -9,9 +9,11 @@ namespace UxFoodService.Service.Interface
 {
     public interface ICardapiorRepository
     {
-        [Get("/Cardapio/GetListMenuCardapioPorId")]
-        Task<List<MenuModel>> GetListMenuCardapioPorId(int IdCardapio);
+        [Get("/Cardapio/GetCardapioPrincipalMenu")]
+        Task<List<MenuModel>> GetCardapioPrincipalMenu();
         [Post("/Produto/GetListProdutoPorListaProduto")]
         Task<List<ProdutoModel>> GetListProdutoPorListProduto(List<int> listProduto);
+        [Get("/Cardapio/GetMenuPorMenuSeq")]
+        Task<List<MenuModel>> GetMenuPorMenuSeq(string codSeqMenu);
     }
 }
